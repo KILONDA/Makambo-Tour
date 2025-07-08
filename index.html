@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makambo Tours - Découvrez le Congo-Brazzaville</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed z-50 w-full text-white bg-green-800 shadow-lg">
+      <div class="container px-6 py-3 mx-auto">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center">
+              <i
+                class="mr-2 text-2xl text-yellow-400 fas fa-map-marked-alt"
+              ></i>
+              <span class="text-xl font-bold">Makambo Tours</span>
+            </div>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="flex items-center md:hidden">
+            <button class="outline-none mobile-menu-button">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="items-center hidden space-x-8 pr-4 py-4 md:flex">
+            <a href="#accueil" class="transition hover:text-yellow-400"
+              >Accueil</a
+            >
+            <a href="#destinations" class="transition hover:text-yellow-400"
+              >Destinations</a
+            >
+            <a href="#circuits" class="transition hover:text-yellow-400"
+              >Circuits</a
+            >
+            <a href="#apropos" class="transition hover:text-yellow-400"
+              >À propos</a
+            >
+            <a href="#contact" class="transition hover:text-yellow-400"
+              >Contact</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden">
+          <a href="#accueil" class="block px-4 py-2 hover:bg-green-700"
+            >Accueil</a
+          >
+          <a href="#destinations" class="block px-4 py-2 hover:bg-green-700"
+            >Destinations</a
+          >
+          <a href="#circuits" class="block px-4 py-2 hover:bg-green-700"
+            >Circuits</a
+          >
+          <a href="#apropos" class="block px-4 py-2 hover:bg-green-700"
+            >À propos</a
+          >
+          <a href="#contact" class="block px-4 py-2 hover:bg-green-700"
+            >Contact</a
+          >
+          <a
+            href="#reservation"
+            class="block px-4 py-2 font-medium text-green-900 bg-yellow-500"
+            >Réserver</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="accueil"
+      class="flex items-center justify-center pt-16 text-white hero"
+    >
+      <div class="container px-6 mx-auto text-center">
+        <h1 class="mb-6 text-4xl font-bold md:text-6xl">
+          Découvrez le Congo-Brazzaville
+        </h1>
+        <p class="mb-8 text-xl md:text-2xl">
+          Une aventure inoubliable au cœur de l'Afrique équatoriale
+        </p>
+        <div class="flex flex-col justify-center gap-4 md:flex-row">
+          <a
+            href="#circuits"
+            class="px-6 py-3 font-bold text-green-900 transition bg-yellow-500 rounded-md hover:bg-yellow-600"
+            >Nos Circuits</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-3 font-bold text-white transition bg-transparent border-2 border-white rounded-md hover:bg-white hover:text-green-800"
+            >Contactez-nous</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-white">
+      <div class="container px-6 mx-auto">
+        <h2 class="mb-12 text-3xl font-bold text-center text-green-800">
+          Pourquoi choisir Makambo Tours ?
+        </h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div class="p-6 text-center transition rounded-lg hover:shadow-lg">
+            <div class="flex justify-center mb-4">
+              <i class="text-5xl text-yellow-500 fas fa-map-signs"></i>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold text-green-800">
+              Guides Experts
+            </h3>
+            <p class="text-gray-600">
+              Nos guides locaux vous feront découvrir les secrets et trésors
+              cachés du Congo avec passion.
+            </p>
+          </div>
+          <div class="p-6 text-center transition rounded-lg hover:shadow-lg">
+            <div class="flex justify-center mb-4">
+              <i class="text-5xl text-yellow-500 fas fa-hand-holding-heart"></i>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold text-green-800">
+              Tourisme Responsable
+            </h3>
+            <p class="text-gray-600">
+              Nous nous engageons pour un tourisme durable qui respecte les
+              populations et l'environnement.
+            </p>
+          </div>
+          <div class="p-6 text-center transition rounded-lg hover:shadow-lg">
+            <div class="flex justify-center mb-4">
+              <i class="text-5xl text-yellow-500 fas fa-award"></i>
+            </div>
+            <h3 class="mb-2 text-xl font-semibold text-green-800">
+              Expérience Authentique
+            </h3>
+            <p class="text-gray-600">
+              Vivez des expériences uniques et authentiques, loin des sentiers
+              battus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="pb-16 pt-32 bg-gray-100">
+      <div class="container px-6 mx-auto">
+        <h2 class="mb-12 text-3xl font-bold text-center text-green-800">
+          Nos Destinations Phares
+        </h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Destination 1 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md card-hover"
+          >
+            <img
+              src="https://wheretogo.net/images/destinations/republic-of-the-congo-85_1320x375.jpg"
+              alt="Brazzaville"
+              class="object-cover w-full h-64"
+            />
+            <div class="p-6">
+              <h3 class="mb-2 text-xl font-bold text-green-800">Brazzaville</h3>
+              <p class="mb-4 text-gray-600">
+                La capitale culturelle avec son ambiance unique, ses marchés
+                animés et son histoire riche.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Ville</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Culture</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Histoire</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 2 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md card-hover"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpY1ZnSyRt25i2KlXRH5WLI4YG671_ANf6-hejqd52loQvoJMXiQHtyO0l1Dcee9o7RiM&usqp=CAU"
+              alt="Pointe-Noire"
+              class="object-cover w-full h-64"
+            />
+            <div class="p-6">
+              <h3 class="mb-2 text-xl font-bold text-green-800">
+                Pointe-Noire
+              </h3>
+              <p class="mb-4 text-gray-600">
+                La capitale économique et ses magnifiques plages, sans oublier
+                sa vie nocturne animée.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Plage</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Détente</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Vie nocturne</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Destination 3 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-md card-hover"
+          >
+            <img
+              src="https://lacongolaise242.org/wp-content/uploads/2023/04/ODZ.jpg"
+              alt="Parc National d'Odzala"
+              class="object-cover w-full h-64"
+            />
+            <div class="p-6">
+              <h3 class="mb-2 text-xl font-bold text-green-800">
+                Parc National d'Odzala
+              </h3>
+              <p class="mb-4 text-gray-600">
+                Un sanctuaire de biodiversité abritant gorilles, éléphants et
+                une forêt tropicale luxuriante.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Nature</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Safari</span
+                >
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >Aventure</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="#circuits"
+            class="inline-block px-6 py-3 font-bold text-white transition bg-green-700 rounded-md hover:bg-green-800"
+            >Voir tous nos circuits</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section
+      class="py-32 parallax"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+      "
+    >
+      <div class="container px-6 mx-auto text-center text-white">
+        <h2 class="mb-6 text-4xl font-bold">L'aventure vous attend</h2>
+        <p class="max-w-2xl mx-auto mb-8 text-xl">
+          Découvrez des paysages à couper le souffle, une faune exceptionnelle
+          et une culture riche en émotions.
+        </p>
+        <a
+          href="#contact"
+          class="px-6 py-3 font-bold text-green-900 transition bg-yellow-500 rounded-md hover:bg-yellow-600"
+          >Planifiez votre voyage</a
+        >
+      </div>
+    </section>
+
+    <!-- Circuits Section -->
+    <section id="circuits" class="pb-16 pt-32 bg-white">
+      <div class="container px-6 mx-auto">
+        <h2 class="mb-12 text-3xl font-bold text-center text-green-800">
+          Nos Circuits Populaires
+        </h2>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Circuit 1 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-lg card-hover"
+          >
+            <div class="relative">
+              <img
+                src="https://www.nomade-aventure.com/Content/Images/carteProduit/carte-congo-cog20.jpg"
+                alt="Circuit Découverte"
+                class="object-cover w-full h-64"
+              />
+              <div
+                class="absolute px-3 py-1 text-sm font-bold text-green-900 bg-yellow-500 rounded-full top-4 right-4"
+              >
+                Nouveau
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-bold text-green-800">
+                  Découverte du Congo
+                </h3>
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >8 jours</span
+                >
+              </div>
+              <p class="mb-4 text-gray-600">
+                Un circuit complet pour découvrir les trésors du Congo, des
+                villes aux parcs nationaux.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-green-800">À partir de 1 200€</span>
+                <a
+                  href="#reservation"
+                  class="font-medium text-yellow-500 hover:text-yellow-600"
+                  >Réserver</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Circuit 2 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-lg card-hover"
+          >
+            <div class="relative">
+              <img
+                src="https://www.adiac-congo.com/sites/default/files/dscf8032.jpg"
+                alt="Circuit Culturel"
+                class="object-cover w-full h-64"
+              />
+              <div
+                class="absolute px-3 py-1 text-sm font-bold text-white bg-red-500 rounded-full top-4 right-4"
+              >
+                Populaire
+              </div>
+            </div>
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-bold text-green-800">
+                  Expérience Culturelle
+                </h3>
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >5 jours</span
+                >
+              </div>
+              <p class="mb-4 text-gray-600">
+                Plongez au cœur de la culture congolaise à travers ses musées,
+                ses danses et sa gastronomie.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-green-800">À partir de 750€</span>
+                <a
+                  href="#reservation"
+                  class="font-medium text-yellow-500 hover:text-yellow-600"
+                  >Réserver</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Circuit 3 -->
+          <div
+            class="overflow-hidden transition duration-300 bg-white rounded-lg shadow-lg card-hover"
+          >
+            <img
+              src="https://media.privileges-voyages.com/resizer/r/800-450-1-70-0/medias/mediatheque/produits/NWL578/Kamba-Congo-Nature-Gorilles-Ngaga-Andrew-Howard.jpg"
+              alt="Safari Aventure"
+              class="object-cover w-full h-64"
+            />
+            <div class="p-6">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="text-xl font-bold text-green-800">
+                  Safari Aventure
+                </h3>
+                <span
+                  class="px-2 py-1 text-xs text-green-800 bg-green-100 rounded"
+                  >7 jours</span
+                >
+              </div>
+              <p class="mb-4 text-gray-600">
+                Partez à la rencontre des gorilles et autres espèces
+                emblématiques de la forêt équatoriale.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="font-bold text-green-800">À partir de 1 500€</span>
+                <a
+                  href="#reservation"
+                  class="font-medium text-yellow-500 hover:text-yellow-600"
+                  >Réserver</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a
+            href="#circuits"
+            class="inline-block px-6 py-3 font-bold text-white transition bg-green-700 rounded-md hover:bg-green-800"
+            >Voir tous nos circuits</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gray-100">
+      <div class="container px-6 mx-auto">
+        <h2 class="mb-12 text-3xl font-bold text-center text-green-800">
+          Témoignages de nos voyageurs
+        </h2>
+
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <!-- Testimonial 1 -->
+          <div class="p-8 bg-white rounded-lg shadow-md testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-4 overflow-hidden rounded-full">
+                <img
+                  src="https://randomuser.me/api/portraits/women/44.jpg"
+                  alt="Sophie Martin"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-green-800">Sophie Martin</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="italic text-gray-600">
+              "Le circuit découverte était parfaitement organisé. Nos guides
+              étaient incroyablement compétents et attentionnés. Une expérience
+              que je recommande à tous les amoureux de l'Afrique !"
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="p-8 bg-white rounded-lg shadow-md testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-4 overflow-hidden rounded-full">
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Jean Dupont"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-green-800">Jean Dupont</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p class="italic text-gray-600">
+              "Le safari dans le parc d'Odzala était tout simplement magique.
+              Voir les gorilles dans leur habitat naturel est une expérience que
+              je n'oublierai jamais. Merci Makambo Tours !"
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="p-8 bg-white rounded-lg shadow-md testimonial-card">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 mr-4 overflow-hidden rounded-full">
+                <img
+                  src="https://randomuser.me/api/portraits/women/68.jpg"
+                  alt="Amélie Leroy"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-green-800">Amélie Leroy</h4>
+                <div class="flex text-yellow-400">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p class="italic text-gray-600">
+              "L'expérience culturelle m'a permis de découvrir des aspects du
+              Congo que je n'aurais jamais pu voir seule. La gastronomie locale
+              est une révélation !"
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="pb-16 pt-32 bg-white">
+      <div class="container px-6 mx-auto">
+        <div class="flex flex-col items-center md:flex-row">
+          <div class="mb-8 md:w-1/2 md:mb-0 md:pr-12">
+            <h2 class="mb-6 text-3xl font-bold text-green-800">
+              À propos de Makambo Tours
+            </h2>
+            <p class="mb-4 text-gray-600">
+              Fondée en 2010, Makambo Tours est une agence de voyage locale
+              spécialisée dans les circuits authentiques au Congo-Brazzaville.
+            </p>
+            <p class="mb-6 text-gray-600">
+              Notre mission est de vous faire découvrir les merveilles de notre
+              pays tout en soutenant les communautés locales et en préservant
+              notre environnement exceptionnel.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="p-3 mr-4 bg-green-100 rounded-full">
+                  <i class="text-green-700 fas fa-users"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">+5000 voyageurs</h4>
+                  <p class="text-sm text-gray-600">
+                    Nous avons accompagné plus de 5000 voyageurs depuis notre
+                    création
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="p-3 mr-4 bg-green-100 rounded-full">
+                  <i class="text-green-700 fas fa-map-marked-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">15 circuits</h4>
+                  <p class="text-sm text-gray-600">
+                    Des expériences uniques à travers tout le Congo-Brazzaville
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="p-3 mr-4 bg-green-100 rounded-full">
+                  <i class="text-green-700 fas fa-hand-holding-heart"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">Tourisme responsable</h4>
+                  <p class="text-sm text-gray-600">
+                    5% de nos bénéfices sont reversés à des projets locaux
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Équipe Makambo Tours"
+                class="w-full rounded-lg shadow-lg"
+              />
+              <div
+                class="absolute p-4 text-green-900 bg-yellow-500 rounded-lg shadow-lg -bottom-6 -right-6"
+              >
+                <p class="text-xl font-bold">10+ ans</p>
+                <p class="text-sm">d'expérience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="pb-16 pt-32 bg-gray-100">
+      <div class="container px-6 mx-auto">
+        <h2 class="mb-12 text-3xl font-bold text-center text-green-800">
+          Contactez-nous
+        </h2>
+
+        <div class="flex flex-col md:flex-row">
+          <div class="mb-8 md:w-1/2 md:mb-0 md:pr-12">
+            <h3 class="mb-4 text-xl font-semibold text-green-800">
+              Nos coordonnées
+            </h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="p-3 mr-4 text-white bg-green-800 rounded-full">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">Adresse</h4>
+                  <p class="text-gray-600">
+                    Avenue Félix Éboué, Brazzaville, Congo
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="p-3 mr-4 text-white bg-green-800 rounded-full">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">Téléphone</h4>
+                  <p class="text-gray-600">+242 06 123 4567</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="p-3 mr-4 text-white bg-green-800 rounded-full">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">Email</h4>
+                  <p class="text-gray-600">contact@makambotours.cg</p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="p-3 mr-4 text-white bg-green-800 rounded-full">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-green-800">Horaires</h4>
+                  <p class="text-gray-600">Lundi - Vendredi : 8h - 18h</p>
+                  <p class="text-gray-600">Samedi : 9h - 13h</p>
+                </div>
+              </div>
+            </div>
+
+            <h3 class="mt-8 mb-4 text-xl font-semibold text-green-800">
+              Suivez-nous
+            </h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="p-3 text-white transition bg-green-800 rounded-full hover:bg-green-700"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="p-3 text-white transition bg-green-800 rounded-full hover:bg-green-700"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="p-3 text-white transition bg-green-800 rounded-full hover:bg-green-700"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="p-3 text-white transition bg-green-800 rounded-full hover:bg-green-700"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="md:w-1/2">
+            <form class="p-8 bg-white rounded-lg shadow-md" action="/contact" method="POST">
+              <h3 class="mb-6 text-xl font-semibold text-green-800">
+                Envoyez-nous un message
+              </h3>
+              <div class="mb-4">
+                <label for="name" class="block mb-2 font-medium text-gray-700"
+                  >Nom complet</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block mb-2 font-medium text-gray-700"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="subject"
+                  class="block mb-2 font-medium text-gray-700"
+                  >Sujet</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block mb-2 font-medium text-gray-700"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  name="message"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full px-4 py-3 font-bold text-white transition bg-green-700 rounded-md hover:bg-green-800"
+              >
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-16 text-white bg-green-800">
+      <div class="container px-6 mx-auto text-center">
+        <h2 class="mb-6 text-3xl font-bold">Abonnez-vous à notre newsletter</h2>
+        <p class="max-w-2xl mx-auto mb-8 text-xl">
+          Recevez nos offres spéciales et les dernières actualités sur les
+          voyages au Congo directement dans votre boîte mail.
+        </p>
+        <form class="flex max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="Votre email"
+            class="flex-grow px-4 py-3 text-gray-800 rounded-l-md focus:outline-none"
+          />
+          <button type="submit" class="cursor-pointer rounded-3xl bg-green-900 px-6 py-3 hover:text-amber-300">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
