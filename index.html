@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Makambo Tours - Découvrez le Congo-Brazzaville</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="/output.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="src/output.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -759,23 +759,30 @@
 
     <!-- Newsletter Section -->
     <section class="py-16 text-white bg-green-800">
-      <div class="container px-6 mx-auto text-center">
+      <div class="container px-6 mx-auto text-center border-b-green-300">
         <h2 class="mb-6 text-3xl font-bold">Abonnez-vous à notre newsletter</h2>
         <p class="max-w-2xl mx-auto mb-8 text-xl">
           Recevez nos offres spéciales et les dernières actualités sur les
           voyages au Congo directement dans votre boîte mail.
         </p>
-        <form class="flex max-w-md mx-auto">
+        <form id="newsletter" class="flex max-w-md mx-auto">
           <input
             type="email"
             placeholder="Votre email"
-            class="flex-grow px-4 py-3 text-gray-800 rounded-l-md focus:outline-none"
+            class="flex-grow px-4 py-3 text-gray-800 rounded-full focus:outline-none bg-white"
           />
           <button type="submit" class="cursor-pointer rounded-3xl bg-green-900 px-6 py-3 hover:text-amber-300">
             Subscribe
           </button>
         </form>
       </div>
+
+      <!-- <div class="copyright">
+        <p>© <span id="current-year"></span> Makambo Tours | Muria Calixte MAYELA. Tous droits réservés.</p>
+        <script>
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>
+      </div> -->
     </section>
   </body>
 </html>

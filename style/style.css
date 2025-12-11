@@ -33,3 +33,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#newsletter {
+    gap: 20px;
+}
